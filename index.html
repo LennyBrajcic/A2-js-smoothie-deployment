@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Order Your Smoothie</h1>
+    <form id="smoothieForm">
+        <label for="smoothieName">Smoothie Name:</label>
+        <input type="text" id="smoothieName" name="smoothieName" required><br><br>
+
+        <label for="base">Choose your base:</label>
+        <select id="base" name="base" required>
+            <option value="">--Select a base--</option>
+            <option value="Milk">Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Yogurt">Yogurt</option>
+            <option value="Juice">Juice</option>
+        </select><br><br>
+
+        <label>Select your fruits:</label><br>
+        <input type="checkbox" name="fruit" value="Banana"> Banana<br>
+        <input type="checkbox" name="fruit" value="Strawberry"> Strawberry<br>
+        <input type="checkbox" name="fruit" value="Blueberry"> Blueberry<br>
+        <input type="checkbox" name="fruit" value="Mango"> Mango<br><br>
+
+        <label for="sweetener">Add a sweetener:</label>
+        <select id="sweetener" name="sweetener">
+            <option value="None">None</option>
+            <option value="Honey">Honey</option>
+            <option value="Sugar">Sugar</option>
+        </select><br><br>
+
+        <button type="submit" id="orderButton">Order Smoothie</button>
+    </form>
+
+    <div id="orderSummary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
